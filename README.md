@@ -70,4 +70,4 @@ color支持gray。
 
 响应：
 [{"chapter_name":"第一章","id":"1","chapter_grade":"1"}]
-
+chapter_grade:章节的层级，如第一章的层级可能为1，第一节的层级可能为2.以此类推。
