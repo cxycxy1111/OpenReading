@@ -23,4 +23,5 @@
 
 **注意**
 1. chapter_id即为章节ID，从1开始计数，步长为1；
-2. sect
+2. section可以为空
+3. chapter_content只支持h1/h2/h3/h4/h5/h6/p/ul/ol/li/table/tr/td/b/li/img/blockquote标签。块级元素（如h1 h2 p）之间需要使用\n来分割，如</p>\n<p>，
