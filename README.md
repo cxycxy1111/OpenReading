@@ -1,5 +1,5 @@
 **请以RAW方式阅读该文件**
-# OpenReading必须具备以下接口
+# 若要OpenReading可以获取电子书，则必须具备以下接口
 ## 章节获取接口
 请求：/chapter/list
 请求方式：GET
