@@ -1,3 +1,4 @@
+<p style="color:red">请以RAW方式阅读该文件</p>
 # OpenReading必须具备以下接口
 ## 章节获取接口
 请求：/chapter/list
