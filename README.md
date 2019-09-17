@@ -24,7 +24,8 @@
 **注意**
 1. chapter_id即为章节ID，从1开始计数，步长为1；
 2. section可以为空
-3. chapter_content只支持h1/h2/h3/h4/h5/h6/p/ul/ol/li/table/tr/td/b/i/sup/sub//li/span/img/blockquote标签。块级元素（如h1 h2 p）之间需要使用\n来分割，如</p>\n<p>，<p>\n<ul>，<ul>\n<li>、</li>\n</ul>等；行内元素间除<b><i></i></b>外，不允许嵌套，如“<b><i>hello,world</i></b>”是允许的，而“<b>hello<i>,</i>world</b>”是被不允许的。支持如下span元素的模式：
+3. chapter_content
+只支持h1/h2/h3/h4/h5/h6/p/ul/ol/li/table/tr/td/b/i/sup/sub//li/span/img/blockquote标签。块级元素（如h1 h2 p）之间需要使用\n来分割，如</p>\n<p>，<p>\n<ul>，<ul>\n<li>、</li>\n</ul>等；行内元素间除<b><i></i></b>外，不允许嵌套，如“<b><i>hello,world</i></b>”是允许的，而“<b>hello<i>,</i>world</b>”是被不允许的。支持如下span元素的模式：
   - <span style=\"text-indent:(.*);text-align:(.*);font-style:(.*);font-weight:(.*);color:(.*)\">(.*)<span>
   - <span style=\"font-style:(.*);font-weight:(.*);color:(.*);font-size:(.*)\">(.*)</span>
   支持以下几种特殊类型的p标签：
@@ -60,4 +61,13 @@ color支持gray。
 
 <p class=\"table-quote\"></p>
 表格注释
+4. is_last_chapter 标识书籍的最后一章 值为yes或no
+5. is_first_chapter 标识书籍的第一章 值为yes或no
+
+## 章节目录接口
+请求：novel/chapter/list?novel=1
+请求方式：GET
+
+响应：
+[{"chapter_name":"第一章","id":"1","chapter_grade":"1"}]
 
